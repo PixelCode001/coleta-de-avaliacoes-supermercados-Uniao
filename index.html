@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Supermercado União</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="color-line"></div>
+
+    <!-- Hero Section com CTA -->
+    <header class="hero-section">
+        <h1>Bem-vindo ao Supermercado União!</h1>
+        <p>Nosso compromisso é oferecer o melhor para você. Ajude-nos a melhorar!</p>
+        <div class="hero-buttons">
+            <a href="#evaluation-section" class="hero-button primary">Avaliar Loja</a>
+            <a href="#contact-section" class="hero-button secondary">Fale Conosco</a>
+            <a href="#help-section" class="hero-button tertiary">Precisa de Ajuda?</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Seção de Avaliação -->
+        <section id="evaluation-section" class="evaluation-section">
+            <h2>Avalie Nossa Loja</h2>
+            <p>Nos ajude a melhorar, avaliando sua experiência!</p>
+
+            <!-- Categorias de Avaliação -->
+            <div class="evaluation-category">
+                <label>Disponibilidade de Produtos</label>
+                <div class="emoji-rating">
+                    <span>😞</span><span>😐</span><span>😊</span><span>😍</span>
+                </div>
+            </div>
+            <div class="evaluation-category">
+                <label>Atendimento ao Cliente</label>
+                <div class="emoji-rating">
+                    <span>😞</span><span>😐</span><span>😊</span><span>😍</span>
+                </div>
+            </div>
+            <div class="evaluation-category">
+                <label>Tempo de Espera</label>
+                <input type="range" min="0" max="10" step="1" class="slider">
+            </div>
+            <div class="evaluation-category">
+                <label>Organização dos Corredores</label>
+                <div class="emoji-rating">
+                    <span>😞</span><span>😐</span><span>😊</span><span>😍</span>
+                </div>
+            </div>
+            <div class="evaluation-category">
+                <label>Qualidade dos Produtos</label>
+                <div class="emoji-rating">
+                    <span>😞</span><span>😐</span><span>😊</span><span>😍</span>
+                </div>
+            </div>
+            <div class="evaluation-category">
+                <label>Limpeza da Loja</label>
+                <div class="emoji-rating">
+                    <span>😞</span><span>😐</span><span>😊</span><span>😍</span>
+                </div>
+            </div>
+            <div class="evaluation-category">
+                <label>Promoções Disponíveis</label>
+                <div class="emoji-rating">
+                    <span>😞</span><span>😐</span><span>😊</span><span>😍</span>
+                </div>
+            </div>
+
+            <!-- Seção de Comentário -->
+            <div class="comment-section">
+                <label for="comment">Deixe seu Comentário</label>
+                <textarea id="comment" placeholder="Conte-nos mais sobre sua experiência..."></textarea>
+            </div>
+            <button class="submit-button">Enviar Avaliação</button>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contact-section" class="contact-section">
+            <h2>Contato</h2>
+            <p>Para dúvidas, entre em contato conosco!</p>
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Escreva sua mensagem..."></textarea>
+            <button class="submit-button">Enviar</button>
+        </section>
+
+        <!-- Seção de Ajuda -->
+        <section id="help-section" class="help-section">
+            <h2>Ajuda</h2>
+            <p>Confira as perguntas frequentes ou fale com nossa equipe.</p>
+            <button class="faq-button">Ver FAQ</button>
+        </section>
+    </div>
+
+    <script>
+        // Interação com as Emojis de Avaliação
+        document.querySelectorAll('.emoji-rating span').forEach(span => {
+            span.addEventListener('click', function() {
+                document.querySelectorAll('.emoji-rating span').forEach(s => s.classList.remove('selected'));
+                this.classList.add('selected');
+            });
+        });
+    </script>
+</body>
+</html>
