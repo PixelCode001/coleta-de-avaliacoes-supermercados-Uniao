@@ -221,3 +221,112 @@ textarea:focus {
   background-color: #33FF66;
   transform: scale(1.05);
 }
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+  /* Ajusta o Hero Section */
+  .hero-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .hero-button {
+    padding: 12px 25px;
+    font-size: 16px;
+    margin: 8px;
+  }
+
+  .hero-button.primary {
+    background-color: #FF3366;
+  }
+
+  /* Seção de Avaliação */
+  .evaluation-section {
+    padding: 20px;
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+  }
+
+  .evaluation-category {
+    padding: 15px;
+  }
+
+  .evaluation-category label {
+    font-size: 18px;
+  }
+
+  .emoji-rating span {
+    font-size: 24px;
+  }
+
+  .slider {
+    height: 8px;
+  }
+
+  .submit-button {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .comment-section label {
+    font-size: 16px;
+  }
+
+  textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .faq-button {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+}
+
+/* Responsividade para Dispositivos Móveis Pequenos */
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 26px;
+  }
+
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .evaluation-category {
+    padding: 10px;
+  }
+
+  .evaluation-category label {
+    font-size: 16px;
+  }
+
+  .emoji-rating span {
+    font-size: 20px;
+  }
+
+  .slider {
+    height: 6px;
+  }
+
+  textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .faq-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
